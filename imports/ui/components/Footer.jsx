@@ -1,27 +1,8 @@
 // Framework
-import React, { PureComponent } from "react";
+import React from "react";
 
-// Components
-import Page from "../components/Page.jsx";
-
-class Footer extends PureComponent {
-  render() {
-    return (
-      <Page>
-        <div className="home-page">
-          <h2 className="title">Welcome to our fancy Shop</h2>
-          <button
-            className="bonsai-button"
-            onClick={() => {
-              this.props.history.push("/shop");
-            }}
-          >
-            Go shopping
-          </button>
-        </div>
-      </Page>
-    );
-  }
-}
+const Footer = () => {
+  return <div className="footer">Footer</div>;
+};
 
 export default Footer;
