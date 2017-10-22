@@ -1,4 +1,4 @@
-class Shop extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
     // Initialize State
@@ -45,4 +45,4 @@ class Shop extends Component {
   }
 }
 
-export default Shop;
+export default Header;
