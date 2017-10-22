@@ -3,6 +3,7 @@ import React, { PureComponent } from "react";
 
 // Components
 import Page from "../components/Page.jsx";
+import Button from "../components/Button.jsx";
 
 class Home extends PureComponent {
   render() {
@@ -10,14 +11,13 @@ class Home extends PureComponent {
       <Page>
         <div className="home-page">
           <h2 className="title">Welcome to our fancy Shop</h2>
-          <button
-            className="bonsai-button"
+          <Button
             onClick={() => {
               this.props.history.push("/shop");
             }}
           >
             Go shopping
-          </button>
+          </Button>
         </div>
       </Page>
     );
