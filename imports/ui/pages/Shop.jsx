@@ -8,7 +8,7 @@ import { Meteor } from "meteor/meteor";
 import { Alert, Row, Col } from "reactstrap";
 import Page from "../components/Page.jsx";
 
-class ReturnsPage extends Component {
+class Shop extends Component {
   constructor(props) {
     super(props);
     // Initialize State
@@ -55,4 +55,4 @@ class ReturnsPage extends Component {
   }
 }
 
-export default ReturnsPage;
+export default Shop;
