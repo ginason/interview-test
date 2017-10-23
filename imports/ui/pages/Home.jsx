@@ -10,7 +10,7 @@ class Home extends PureComponent {
     return (
       <Page>
         <div className="home-page">
-          <h2 className="title">Welcome to our fancy Shop</h2>
+          <h2 className="title">Welcome to our humble Shop</h2>
           <Button
             onClick={() => {
               this.props.history.push("/shop");

@@ -28,10 +28,12 @@ class Shop extends Component {
     });
   }
 
+  goBack = () => this.props.history.push("/");
+
   render() {
     const { lastOrder, error } = this.state;
     return (
-      <Page>
+      <Page pageTitle="shop" history goBack={this.goBack}>
         <Row>
           <Col>
             <Alert className="mt-3">

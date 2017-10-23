@@ -4,15 +4,18 @@
 import React from "react";
 
 // Components
-import { Container } from "reactstrap";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
-export const Page = ({ children }) =>
-  <Container fluid className="page">
-    <Header />
-    {children}
+export const Page = ({ children, pageTitle, history, goBack }) =>
+  <div className="page">
+    <Header goBack={goBack}>
+      {pageTitle}
+    </Header>
+    <main>
+      {children}
+    </main>
     <Footer />
-  </Container>;
+  </div>;
 
 export default Page;
