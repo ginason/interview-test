@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "http://github.com/ShopBonsai/interview-test/",
   "scripts": {
-    "start": "meteor run",
+    "start": "MONGO_URL=mongodb://localhost:27017/interview meteor run",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix",
     "prepush": "meteor npm run lint"
