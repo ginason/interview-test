@@ -10,21 +10,19 @@ import Product from "../components/Product";
 class Shop extends Component {
   constructor(props) {
     super(props);
-    // Initialize State
-    this.initialState = {
+    this.state = {
       merchants: [],
       error: null
     };
-    this.state = this.initialState;
   }
 
   componentWillMount() {
-    console.log("here1newNow11");
     Meteor.call("merchants.getMerchants", (error, response) => {
       if (error) {
         this.setState(() => ({ error: error }));
+      } else {
+        this.setState(() => ({ merchants: response }));
       }
-      this.setState(() => ({ merchants: response }));
     });
   }
 
@@ -33,14 +31,14 @@ class Shop extends Component {
   render() {
     const { merchants, error } = this.state;
 
+    const getProductsFromMerchant = ({ products, brands }) =>
+      products.map(({ belongsToBrand, ...product }) => ({
+        ...product,
+        brand: brands[belongsToBrand]
+      }));
+
     const products = merchants.reduce(
-      (acc, { products = [] }, i, self) => [
-        ...acc,
-        ...products.map(product => ({
-          ...product,
-          brand: self[i].brands[product.belongsToBrand]
-        }))
-      ],
+      (acc, merchant) => [...acc, ...getProductsFromMerchant(merchant)],
       []
     );
 
