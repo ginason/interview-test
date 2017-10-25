@@ -5,7 +5,7 @@ The goal is to create the single page provided in the `/docs/` folder of this re
 
 The single page should look like the following:
 
-![Main Page](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/return-page.png)
+![Home Page](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/homePage.png)
 
 The following should be noted:
 1. The back button does not need to work.
@@ -40,7 +40,7 @@ The following will be considered:
 2. View at `http://localhost:3000/`
 
 It should look like this initially:
-![How the page should look by default.](https://i.imgur.com/Pbv4l9W.png)
+![How the shop page should look by default.](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.gif)
 
 ## Lint
 1. `meteor npm run lint`
