@@ -6,7 +6,7 @@ import Button from "../components/Button.jsx";
 
 class Product extends PureComponent {
   handleBuyProduct = () => {
-    alert("nothing");
+    alert("This button does nothing!");
   };
 
   render() {
@@ -35,7 +35,7 @@ class Product extends PureComponent {
         <div className="details">
           <div className="info">
             {info.map(({ label, value }) =>
-              <div className="info-row" key={`${label}${value}${name}`}>
+              <div className="info-row" key={`${name}-${label}-${value}`}>
                 <div className="label">
                   {label}:
                 </div>

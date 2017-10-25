@@ -1,9 +1,13 @@
 // Framework
 import React from "react";
 
-const Button = ({ children, onClick }) => {
+const Button = ({ children, onClick, className = "", ...extraProps }) => {
   return (
-    <button className="bonsai-button" onClick={onClick}>
+    <button
+      {...extraProps}
+      className={`bonsai-button ${className}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
