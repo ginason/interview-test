@@ -14,8 +14,8 @@ Here are some ideas for features that are missing from the app:
  - Clicking Buy does SOMETHING! This should add data to the database in a meaningful way and communicate to the user that such an action took place.
  - Ability to select a quantity to buy. The quantity should be stored in the database in a meaningful way, this data should be retrieved and displayed somewhere for the user.
  - Add a profile page to display user-related data. This data should be stored in the database and retrieved.
- - Allow users to login using social media. A record of the user being logged in should be stored in the database, retrieved and displayed (perhaps on a special admin-only page)
- - Select multiple items to buy together. Which items get selected/submitted should be stored meaningfully in the database
+ - Allow users to login using social media. A record of the user being logged in should be stored in the database, retrieved and displayed (perhaps on a special admin-only page).
+ - Select multiple items to buy together. Which items get selected/submitted should be stored meaningfully in the database.
  - Add a cart object to display selected items the user wants to buy. Store this information meaningfully in the database.
  - Organize the shop page for better browsing experience, adding filters for brands/merchants/products.
  - Ability to 'like' an item. Store which items got liked in the database, retrieve this information.
@@ -56,7 +56,7 @@ It should look like this initially:
 ![Home Page Default Look](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/homePage.png)
 
 Clicking on 'Go Shopping' button should display the shop page:
-![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.mp4)
+![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.gif)
 
 ## Lint
 1. `meteor npm run lint`
