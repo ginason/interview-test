@@ -1,34 +1,47 @@
 # Bonsai Interview Test
 
-The goal is to create the single page provided in the `/docs/` folder of this repository. This is intentionally stripped down to allow for better inspection of your core skills and intuition.
+Welcome to the creative interview test at shop bonsai.
 
+This interview test simulates an environment that is similar to working at Shop Bonsai (very similar tech stack we run today). 
 
-The single page should look like the following:
+Scenario:
+You joined as the new member of a small start-up team. Together we are building a new app to sell cool 3rd party products! So far, the sales team worked tirelessly and managed to acquire over 50 merchants who each have different brands and products offerings. The developers have also been working hard and have created a home page and shop page to welcome the users and display the products of the newly acquired merchants.
 
-![Main Page](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/return-page.png)
+Goal:
+Your task is to add a new complete working feature that you feel will best demonstrate your capabilities as a team-member and have the largest positive impact on our customer. This implies that JUST updating the es-lint rules to include trailing commas, switching all space-characters in the code-base to tab-characters, and/or updating the .gitignore will score low. However, non-customer facing features such as validating data, unit-testing, creating a automatic-backups of the database, can score very high if done well.
+
+Here are some ideas for features that are missing from the app:
+ - Clicking Buy does SOMETHING! This should add data to the database in a meaningful way and communicate to the user that such an action took place.
+ - Ability to select a quantity to buy. The quantity should be stored in the database in a meaningful way, this data should be retrieved and displayed somewhere for the user.
+ - Add a profile page to display user-related data. This data should be stored in the database and retrieved.
+ - Allow users to login using social media. A record of the user being logged in should be stored in the database, retrieved and displayed (perhaps on a special admin-only page)
+ - Select multiple items to buy together. Which items get selected/submitted should be stored meaningfully in the database
+ - Add a cart object to display selected items the user wants to buy. Store this information meaningfully in the database.
+ - Organize the shop page for better browsing experience, adding filters for brands/merchants/products.
+ - Ability to 'like' an item. Store which items got liked in the database, retrieve this information.
+ - Searching for product by name/brand/merchant. Store searches meaningfully in the database.
+ - Add loading-images so the screen isn't empty while data is loading. Add page visits and loading times to the database in a meaningful way.
+ - Add a react testing-framework and create a test. Record the results in separate database for the QA team!
 
 The following should be noted:
-1. The back button does not need to work.
-2. The `1 of 3` does not need to be hooked up to anything.
-3. All other numbers and values on the screen should be hooked up to the real data being pulled in.
-4. An `order` contains several `merchantOrders` which will each have a heading separating them, in the mock-up you can see this listed as `Seller A`.
-3. The footer listing `Terms and Conditions >` does not need to lead anywhere. If you want bonus points you can create a new api method for generating a `Returns` collection document. And, have that footer create the document.
-4. The `Talk to Someone` button should open the help modal. (/docs/help-modal.png)
-5. The `Call Us` button does not need to work.
-6. The `Close` button should work.
-7. The quantity button should open the quantity selection drawer from the right side. (/docs/quantity-drawer.png)
-8. The `back arrow` button on the quantity drawer should close the drawer.
+1. Assume that if a piece of code/function is not working, it is a bug in the app (oh no!)
+2. Work with the data as if it were real. (Do not manipulate/transform the mockData files)
+3. You can make additional assumptions, please note them if they are critical to understanding the way a feature is implemented
+4. You can add multiple small features or one large feature
+5. Please document your changes well and make as many atomic commits as you feel are necessary for someone to track your changes
 
-### Help Modal
-![Help Modal](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/help-modal.png)
-
-### Quantity Drawer
-![Quantity Drawer](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/quantity-drawer.png)
-
-The following will be considered:
-- Understanding of frameworks, especially React.
-- Attention to detail
+Of your submission, the following will be evaluated:
+- Ability to work in a pre-existing React environment (front-end)
+- Ability to use existing data in the database (back-end)
+- Ability add/store/retrieve new data in the database (back-end)
+- Completeness of feature, works as a user would expect such a feature to work
+- Adopting and using best practices
 - Coding style
+- Attention to detail
+- Clarity in communicating the feature implemented (I highly recommend taking pictures and gifs)
+
+High scorers will be contacted via email within a week of acknowledgement of PR submission.
+Thank you and good luck for everyone who applied and submitted a PR.
 
 ## Install
 1. Ensure `npm` is installed.
@@ -40,7 +53,10 @@ The following will be considered:
 2. View at `http://localhost:3000/`
 
 It should look like this initially:
-![How the page should look by default.](https://i.imgur.com/Pbv4l9W.png)
+![Home Page Default Look](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/homePage.png)
+
+Clicking on 'Go Shopping' button should display the shop page:
+![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.gif)
 
 ## Lint
 1. `meteor npm run lint`
