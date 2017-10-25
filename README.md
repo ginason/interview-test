@@ -56,7 +56,7 @@ It should look like this initially:
 ![Home Page Default Look](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/homePage.png)
 
 Clicking on 'Go Shopping' button should display the shop page:
-![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.gif)
+![Shop Page Default Look and browse](https://raw.githubusercontent.com/ShopBonsai/interview-test/master/docs/shopPage.mp4)
 
 ## Lint
 1. `meteor npm run lint`
