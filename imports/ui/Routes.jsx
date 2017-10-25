@@ -1,16 +1,21 @@
-// @flow
-
 // Framework
 import React from "react";
-import { Route } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  browserHistory
+} from "react-router-dom";
 
 // Pages
-import ReturnsPage from "./pages/ReturnsPage.jsx";
+import Shop from "./pages/Shop.jsx";
+import Home from "./pages/Home.jsx";
 
 const Routes = () =>
-  <BrowserRouter>
-    <Route exact path="/" component={ReturnsPage} />
-  </BrowserRouter>;
+  <Router history={browserHistory}>
+    <div>
+      <Route exact path="/" component={Home} />
+      <Route path="/shop" component={Shop} />
+    </div>
+  </Router>;
 
 export default Routes;
