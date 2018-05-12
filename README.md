@@ -68,3 +68,4 @@ Clicking on 'Go Shopping' button should display the shop page:
 ## Lint
 1. `meteor npm run lint`
 2. Before pushing linting is automatically run.
+# test
