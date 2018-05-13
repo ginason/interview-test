@@ -22,6 +22,7 @@ class Shop extends Component {
         this.setState(() => ({ error: error }));
       } else {
         this.setState(() => ({ merchants: response }));
+        console.log(response);
       }
     });
   }
@@ -41,12 +42,12 @@ class Shop extends Component {
       (acc, merchant) => [...acc, ...getProductsFromMerchant(merchant)],
       []
     );
-
+    console.log(products);
     return (
       <Page pageTitle="shop" history goBack={this.goBack}>
         <div className="shop-page">
           {products.map(({ id, ...product }) =>
-            <Product {...product} key={id} />
+            <Product {...product} history productId={id} key={id} />
           )}
         </div>
       </Page>

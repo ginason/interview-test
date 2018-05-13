@@ -1,5 +1,6 @@
 // Framework
 import React from "react";
+import { Link, Route } from "react-router-dom";
 
 const Header = ({ children, goBack }) =>
   <header>
@@ -10,7 +11,7 @@ const Header = ({ children, goBack }) =>
     <h1>
       {children}
     </h1>
-    <div className="right-content" />
+    <Link to={"/cart"} className="right-content">Go to Cart</Link>
   </header>;
 
 export default Header;

@@ -4,6 +4,7 @@ import React, { PureComponent } from "react";
 // Components
 import Page from "../components/Page.jsx";
 import Button from "../components/Button.jsx";
+import Facebook from "../components/FacebookLogin";
 
 class Home extends PureComponent {
   render() {
@@ -18,6 +19,7 @@ class Home extends PureComponent {
           >
             Go shopping
           </Button>
+          <Facebook />
         </div>
       </Page>
     );

@@ -5,19 +5,21 @@
   "license": "MIT",
   "repository": "http://github.com/ShopBonsai/interview-test/",
   "scripts": {
-    "start": "MONGO_URL=mongodb://localhost:27017/interview meteor run",
+    "start": "set HTTPS=true&&MONGO_URL=mongodb://localhost:27017/interview meteor run",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix",
     "prepush": "meteor npm run lint"
   },
   "dependencies": {
-    "babel-runtime": "6.25.0",
+    "@babel/runtime": "^7.0.0-beta.46",
+    "babel-runtime": "^6.25.0",
     "bootstrap": "4.0.0-alpha.6",
     "meteor-node-stubs": "0.2.4",
     "react": "15.6.1",
     "react-addons-css-transition-group": "15.6.0",
     "react-addons-transition-group": "15.6.0",
     "react-dom": "15.6.1",
+    "react-facebook-login": "^4.0.1",
     "react-router": "4.2.0",
     "react-router-dom": "4.2.2",
     "react-transition-group": "1.1.2",
